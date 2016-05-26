@@ -16,6 +16,7 @@ Si vous programmez avec des bonnes interfaces votre code sera beaucoup plus robu
 
 **Concept de forte cohésion - faible couplage**
 
+
 ### Couplage et cohésion
 #### Couplage
 - Le couplage exprime la relation étroite qu'un élément (Classe,système ou sous système) entretien avec un ou des autres éléments.
@@ -74,7 +75,13 @@ Ils définissent comment instancier les objets et fournissent un moyen de décou
 Ils définissent comment organiser les classes dans un projet. Ils sont complementaires.
 
 ### Design Pattern de comportement
-Ils définissent comment organiser les objets pour que ceux-ci collaborent (distribution des responsabilités) et expliquent le fonctionnement des algorithmes impliqués.
+Ils définissent comment organiser les objets pour que ceux-ci collaborent (distribution des responsabilités) et expliquent le fonctionnement des algorithmes impliqués
+.
+**Principes et DP (note de cours)**
+Encapsulation : Bridge, Template Methode, Adapter, State, Abstract Factory, Strategy
+Composition : Strategy, State, Decorator, Observer
+Hollywood : Template Methode, Factory Methode, Observer
+Ne parlez qu’à vos amis : Facade, Proxy
 
 ## Modèles structurels
 ### Adapter
@@ -106,6 +113,17 @@ Ils définissent comment organiser les objets pour que ceux-ci collaborent (dis
 **Note**: `Decorator` et `Webservice` implémentent tout deux l'interface `RendererInterface`
 
 ![Decorator exemple](https://rawgit.com/domnikl/DesignPatternsPHP/master/Structural/Decorator/uml/uml.png)
+
+### Proxy (note de cours)
+« Se substitue » 
+intermédiaire – contrôle d’accès
+
+### Observer : (note de cours) 
+Model = observable
+Vue = observateur
+Sujet concret : ChessGame
+-> on a enlevé le lien entre le sujet concret et l’observateur en passant la liste de pièces en paramètre
+
 
 ## Sources
 - [http://abrillant.developpez.com/tutoriel/java/design/pattern/introduction](http://abrillant.developpez.com/tutoriel/java/design/pattern/introduction)
